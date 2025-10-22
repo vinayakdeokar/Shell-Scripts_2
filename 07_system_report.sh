@@ -1,7 +1,10 @@
 #!/bin/bash
+
 #######################################
-# Script Name   : system_report.sh
-# Author        : Vinayak Deokar
+# Script Name   : 07_system_report.sh
+# Version       : 2.0 #
+# Date          : 15/10/2025 #
+# Credit        : Vinayak Deokar #
 # Purpose       : Display system resource usage (CPU, Memory, Disk)
 #######################################
 
