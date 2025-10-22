@@ -6,12 +6,12 @@
 # Author        : Vinayak Deokar
 # Purpose       : Simple script to check failed SSH login attempts
 #######################################
+LOG=$1
 
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <log_file>"
     exit 1
 fi
-LOG=$1
 if [ ! -f "$LOG" ]; then
     echo "Error: Log file $LOG does not exist."
     exit 1
