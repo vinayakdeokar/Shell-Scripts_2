@@ -6,13 +6,11 @@
 # Author        : Vinayak Deokar
 # Purpose       : Add users from CSV file (one username per line) using arguments
 ###############################################
-
+CSV_FILE=$1
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <csv_file>"
     exit 1
 fi
-CSV_FILE=$1
-
 if [ ! -f "$CSV_FILE" ]; then
     echo "Error: CSV file '$CSV_FILE' not found."
     exit 1
