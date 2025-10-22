@@ -1,0 +1,28 @@
+####################################### 
+# Script Name 	:  listfile.sh #
+# Version 	    :  2.0 #
+# Date 		    :  16/10/2025 #
+# Credit	    :  Vinayak Deokar #
+# Purpose 	    :  Lists all files in a specified directory and saves output to a text file. #
+#######################################
+
+#!/bin/bash
+
+DIRECTORY=$1
+OUTPUT_FILE=$2
+
+if [[  "$#" -ne 2  ]] 
+then
+    echo "Usage: $0 <directory_path> <output_file>"
+    exit 1
+fi
+
+if [ ! -d "$DIRECTORY" ]; 
+then
+    echo "Error: Directory '$DIRECTORY' does not exist."
+    exit 1
+fi
+
+ls -lh "$DIRECTORY" > "$OUTPUT_FILE"
+
+echo "Files from '$DIRECTORY' have been saved to '$OUTPUT_FILE'."
