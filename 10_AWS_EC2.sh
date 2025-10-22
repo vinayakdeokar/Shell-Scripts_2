@@ -6,12 +6,12 @@
 # Credit        : Vinayak Deokar #
 # Purpose       : Write a shell script that fetches data from an AWS EC2 API and processes the JSON response to print instance IDs and its public and private IP address. #
 #######################################
+REGION=$1
+
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <aws-region>"
     exit 1
 fi
-
-REGION=$1
 
 if ! command -v aws &> /dev/null; then
     echo "Error: AWS CLI not installed"
