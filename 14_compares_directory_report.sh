@@ -6,14 +6,13 @@
 # Author        : Vinayak Deokar
 # Purpose       : Compares two directories and reports differences
 #######################################
+DIR1=$1
+DIR2=$2
 
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <directory1> <directory2>"
     exit 1
 fi
-
-DIR1=$1
-DIR2=$2
 
 if [ ! -d "$DIR1" ]; then
     echo "Error: Directory $DIR1 does not exist."
