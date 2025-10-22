@@ -1,7 +1,7 @@
 #!/bin/bash
 #######################################
 # Script Name   : 13_setting_virtual_host_verbose.sh
-# Version       : 3.0
+# Version       : 2.0
 # Date          : 22/10/2025
 # Author        : Vinayak Deokar
 # Purpose       : Automates the process of setting up a new virtual host with status messages
