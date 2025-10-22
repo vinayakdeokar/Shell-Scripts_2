@@ -1,9 +1,11 @@
 #!/bin/bash
-#######################################
-# Script Name   : website_monitor.sh
+###############################################
+# Script Name   : 08_website_monitor.sh
+# Version       : 2.0
+# Date          : 22/10/2025
 # Author        : Vinayak Deokar
 # Purpose       : Monitor websites/servers using ping and send email if any is down
-#######################################
+###############################################
 
 SITES=("google.com")
 
