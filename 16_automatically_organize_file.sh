@@ -7,13 +7,12 @@
 # Author        : Vinayak Deokar
 # Purpose       : Automatically organize files in a directory based on file types
 #######################################
+DIR=$1
 
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <directory>"
     exit 1
 fi
-
-DIR=$1
 if [ ! -d "$DIR" ]; then
     echo "Error: Directory $DIR does not exist."
     exit 1
